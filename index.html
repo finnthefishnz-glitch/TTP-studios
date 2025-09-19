@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conner's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Conner's Website!</h1>
+    <p>This is a cool website made with HTML, CSS, and JS all in one file. 🎉</p>
+    <button id="clickMe">Click Me!</button>
+    <p id="message"></p>
+  <img src="conner.png">
+
+    <script>
+        document.getElementById('clickMe').onclick = function() {
+            document.getElementById('message').innerText = 'Thanks for clicking! 😊';
+        };
+    </script>
+</body>
+</html>
